@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/UserService/.vs
+/UserService/UserService/bin/Debug/net8.0
+/UserService/UserService/obj
+/UserService/UserService/Properties
+/UserService/Repository/obj
+/UserService/Service/obj
