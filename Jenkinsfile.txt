@@ -1,19 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Checkout Code') {
             steps {
-                sh 'echo Building the project...'
+                checkout scm
             }
         }
-        stage('Test') {
+        stage('Build Project') {
             steps {
-                sh 'echo Running tests...'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'echo Deploying the application...'
+                dir('UserService/UserService') { 
+                    sh 'dotnet build 1_API.csproj'
+                }
             }
         }
     }
