@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace UserService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/User")]
     [ApiController]
     public class UserController : ControllerBase
     {
